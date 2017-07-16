@@ -25,6 +25,14 @@ First, you'll need to download and install the Homebrew. Using Spotlight (option
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
+Next, install XCode's command line tools by typing in:
+
+```bash
+xcode-select --install
+```
+
+Once these are installed, you can move on to...
+
 ---
 
 ### 2.  Install Node.js
