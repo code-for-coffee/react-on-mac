@@ -19,11 +19,7 @@ Guide to installing the tools required to run React+Webpack (via create-react-ap
 
 ### 1. Opening Terminal.app
 
-First, you'll need to download and install the Homebrew. Using Spotlight (option+space), search for **Terminal.app** and hit _return_ top open it. If you have not already installed Homebrew before, visit https://brew.sh and run the command available on their website. Alternatively, copy and paste this into your terminal to install Homebrew. This could take a while.
-
-```bash
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-```
+Using Spotlight (option+space), search for **Terminal.app** and hit _return_ top open it.
 
 Next, install XCode's command line tools by typing in:
 
@@ -31,67 +27,29 @@ Next, install XCode's command line tools by typing in:
 xcode-select --install
 ```
 
-Once these are installed, you can move on to...
+Once this is installed, you can move on to...
 
 ---
 
-### 2.  Install Node.js
+### 2.  Install Node.js via nvm
 
-Once you've installed Homebrew, you need to install **Node.js**. Run the following command in your terminal:
+[NVM](https://github.com/creationix/nvm) is a version manager that lets you easily run multiple versions of Node on MacOS or Linux. Run this command to install nvm: [Additional info about isntall nvm here](https://nodesource.com/blog/installing-node-js-tutorial-using-nvm-on-mac-os-x-and-ubuntu/).
 
 ```bash
-brew install node
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
 ```
 
-This will install Node and npm. Once it is done, verify that everything is installed correctly. In your terminal, type in:
+This will install NVM. Once it is done, verify that everything is installed correctly. In your terminal, type in:
+
+Now we'll install the the LTS (long-term service) version of Node via NVM. Run
 
 ```bash
-node -v
-```
-
-You should see output similar to:
-
-```bash
-$ node -v
-v.6.11.1
-```
-
-This verifies that we have Node.js version 6.11.1 installed on our computer. Next, type in:
-
-```bash
-npm -v
-```
-
-This verifies that the _node package manager_ (npm) has been installed. You should see output similar to:
-
-```bash
-$ npm -v
-3.6.8
+nvm install --lts
 ```
 
 ---
 
-### 3. Upgrading npm
-
-We want to make sure that the _node package manager_ (npm) is up to date. Run the following terminal command:
-
-```bash
-npm i -g npm@latest
-```
-
-In english, we are telling the computer the following: _node package manager: (i)nstall (-g)lobally on my computer [so it can be used anywhere] the latest version of npm [yourself].
-
-This could take a few moments to run. Once it is complete, you'll see output similar to the following (but it may not match exactly.. each computer is different):
-
-```
-npm i -g npm@latest
-+ npm@5.3.0
-updated 1 package in 25.406s
-```
-
----
-
-### 4. Installing create-react-app
+### 3. Installing create-react-app
 
 There is a boilerplate already written for react - it is called _create-react-app_. It is available, like many other scripts, on the _node package manager (npm)_. We can install it using the `npm i` command again. Run the following code in your terminal:
 
@@ -110,7 +68,7 @@ updated 1 package in 41.553s
 
 ---
 
-### 5. Creating a basic React application
+### 4. Creating a basic React application
 
 > You're over halfway there! Keep it up!
 
@@ -177,7 +135,7 @@ We suggest that you begin by typing:
 
 ---
 
-### 6. Starting your React application
+### 5. Starting your React application
 
 _create-react-app_ includes a web server to test your app on. You'll need to _change directory_ (cd) into your applicaton to run it. Do this:
 
@@ -233,7 +191,7 @@ You should see the React starter page.
 
 ---
 
-### 7. Editing your React application
+### 6. Editing your React application
 
 You'll notice that you're encouraged to edit the `src/App.js` file. This is where you can shine! For now, just edit the text in front of you and hit save in your editor of choice. Refresh your application in the browser and you'll see your changes are updated.  
 
@@ -247,7 +205,7 @@ Once they are installed, you will have a new _tab_ under DevTools to the far rig
 
 ---
 
-### 8. Releasing your React application to the public
+### 7. Releasing your React application to the public
 
 Once you are satisfied with your application, it is time to bundle your code together ready for the web. `create-react-app` will bundle your code, remove whitespace, obfuscate it so it is harder for others to read, and make it take up less space. Press `control + c` at the same time to exit your React server if you have not already. Once you have done that, you will see that you can enter more commands in your terminal. Run the following:
 
