@@ -37,13 +37,36 @@ Once these are installed, you can move on to...
 
 ### 2.  Install Node.js
 
-Once you've installed Homebrew, you need to install **Node.js**. Run the following command in your terminal:
+Once you've installed Homebrew, you need to install the **Node Version Manager (NVM)**. Run the following command in your terminal:
 
 ```bash
-brew install node
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
 ```
 
-This will install Node and npm. Once it is done, verify that everything is installed correctly. In your terminal, type in:
+You will now need to reload your bash environment/terminal window or `source .bash_profile`. Once done, you can install the LTS (Long-term support) version of Node.js.
+
+```
+nvm install --lts
+```
+
+This will install the LTS version of Node and npm (as of writing, 8.11.4 is LTS but this will change over time).
+
+```
+Installing latest LTS version.
+Downloading and installing node v8.11.4...
+Downloading https://nodejs.org/dist/v8.11.4/node-v8.11.4-darwin-x64.tar.gz...
+######################################################################## 100.0%
+```
+
+Now, you need to enable/use this version:
+
+```
+nvm use 8.11.4
+```
+
+> Alternative you can create a `.nvrmc` file for each project that specifies a version. See the official documentation for details: https://github.com/creationix/nvm#nvmrc
+
+Once it is done, verify that everything is installed correctly. In your terminal, type in:
 
 ```bash
 node -v
@@ -53,7 +76,7 @@ You should see output similar to:
 
 ```bash
 $ node -v
-v.6.11.1
+v8.11.4
 ```
 
 This verifies that we have Node.js version 6.11.1 installed on our computer. Next, type in:
@@ -66,12 +89,12 @@ This verifies that the _node package manager_ (npm) has been installed. You shou
 
 ```bash
 $ npm -v
-3.6.8
+5.6.0
 ```
 
 ---
 
-### 3. Upgrading npm
+### 3. Upgrading npm (optional, feel free to skip)
 
 We want to make sure that the _node package manager_ (npm) is up to date. Run the following terminal command:
 
