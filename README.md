@@ -8,7 +8,7 @@ Guide to installing the tools required to run React+Webpack (via create-react-ap
 
 1. Running the Terminal.app and Installing Homebrew
 2. Install Node.js
-3. Upgrading **npm**
+3. Upgrading **npm** (optional step)
 4. Installing **create-react-app**
 5. Creating a basic React application
 6. Starting your React application
