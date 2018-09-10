@@ -2,7 +2,7 @@
 
 Guide to installing the tools required to run React+Webpack (via create-react-app) on Mac
 
-> **Attention! Before getting started!** This guide was tested on Mac OS 10.11 using Node v6.11.1 and npm 5.3.0. 
+> **Attention! Before getting started!** This guide was tested on Mac OS 10.11 using Node LTS v8.11.4 and npm 5.6.0. 
 
 ## Steps
 
