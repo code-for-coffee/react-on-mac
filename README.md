@@ -61,7 +61,7 @@ Downloading https://nodejs.org/dist/v8.11.4/node-v8.11.4-darwin-x64.tar.gz...
 Now, you need to enable/use this version:
 
 ```
-nvm use 8.11.4
+nvm use 10.14.0
 ```
 
 > Alternative you can create a `.nvrmc` file for each project that specifies a version. See the official documentation for details: https://github.com/creationix/nvm#nvmrc
@@ -76,7 +76,7 @@ You should see output similar to:
 
 ```bash
 $ node -v
-v8.11.4
+v10.14.0
 ```
 
 This verifies that we have Node.js version 6.11.1 installed on our computer. Next, type in:
@@ -89,7 +89,7 @@ This verifies that the _node package manager_ (npm) has been installed. You shou
 
 ```bash
 $ npm -v
-5.6.0
+6.4.0
 ```
 
 ---
